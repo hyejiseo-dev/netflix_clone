@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_coding/screen/home_screen.dart';
+import 'package:netflix_clone_coding/screen/more_screen.dart';
 import 'package:netflix_clone_coding/widget/bottom_bar.dart';
 
 void main() {
@@ -37,10 +38,8 @@ class _MyAppState extends State<MyApp> {
                   child: Center(
                 child: Text('Save'),
               )),
-              Container(
-                  child: Center(
-                child: Text('More'),
-              ))
+              //더보기 눌렀을때 프로필 화면 표시
+              MoreScreen(),
             ],
           ),
           bottomNavigationBar: Bottom(), //bottom_bar.dart파일에서 쓴 Bottom을 가져와서 넣기
